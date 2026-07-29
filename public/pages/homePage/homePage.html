@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LS Labs — Desenvolvimento sob medida para o seu negócio</title>
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Estilo da Página -->
+  <link rel="stylesheet" href="./homePage.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><span class="ls">LS</span><span class="labs">Labs</span></div>
+      <div class="navlinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como trabalhamos</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <a href="#contato" class="btn btn-solid" style="display:none" id="navCta">Fale conosco</a>
+      <button class="burger" id="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="scales"></div>
+      <div class="mono-mark">LS</div>
+      <div class="wrap">
+        <p class="eyebrow hero-eyebrow">Desenvolvimento sob medida</p>
+        <h1>Tecnologia com <em>precisão</em> pra micro e pequenos negócios</h1>
+        <p class="lead">A LS Labs projeta sites e sistemas que trabalham a seu favor: rápidos de usar, fáceis de manter e feitos pra trazer cliente até você. Sem enrolação técnica, sem letra miúda.</p>
+        <div class="hero-ctas">
+          <a href="#contato" class="btn btn-solid">Quero um orçamento</a>
+          <a href="#servicos" class="btn btn-line">Ver o que fazemos</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>100%</b><span>projetos sob medida</span></div>
+          <div><b>&lt;48h</b><span>primeiro retorno de contato</span></div>
+          <div><b>1</b><span>ponto de contato do início ao fim</span></div>
+        </div>
+      </div>
+      <svg class="fang" viewBox="0 0 1200 46" preserveAspectRatio="none">
+        <polygon points="0,0 1200,0 1200,20 630,46 600,20 570,46 0,20" fill="#f6f8f2"></polygon>
+      </svg>
+    </section>
+
+    <section class="sec-light" id="sobre">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Sobre a LS Labs</p>
+          <h2>Feito pra quem não tem<br>time de TI dentro de casa</h2>
+        </div>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>A LS Labs nasceu com um propósito direto: dar pra micro e pequenas empresas o mesmo padrão de site e sistema que só as grandes empresas costumam ter — mas sem a complicação, o preço e o jargão técnico que normalmente vêm junto.</p>
+            <p>Cuidamos de cada projeto do começo ao fim, sempre com uma pessoa só de referência pra conversar com você. Você explica o negócio, a gente traduz isso em uma presença digital que atrai cliente de verdade.</p>
+            <p>Trabalhamos com foco e agilidade — sem perder o cuidado no detalhe que separa um site amador de um profissional.</p>
+          </div>
+          <div class="traits reveal">
+            <div class="trait">
+              <div class="mark">✓</div>
+              <div><h4>Direto ao ponto</h4><p>Explicações claras, sem jargão técnico e sem enrolação em cada etapa do projeto.</p></div>
+            </div>
+            <div class="trait">
+              <div class="mark">✓</div>
+              <div><h4>Sob medida</h4><p>Cada site é pensado pro seu negócio específico, não um modelo genérico reaproveitado.</p></div>
+            </div>
+            <div class="trait">
+              <div class="mark">✓</div>
+              <div><h4>Perto de você</h4><p>Contato direto durante todo o processo, sem intermediários ou burocracia.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-dark" id="servicos">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Serviços pensados pra dar resultado</h2>
+          <p>Cada entrega é construída pra resolver um problema real do seu negócio — atrair cliente, organizar processo ou dar mais confiança pra quem visita sua página.</p>
+        </div>
+      </div>
+      <div class="cards3 reveal">
+        <div class="card">
+          <span class="num">SITE</span>
+          <h3>Sites institucionais &amp; landing pages</h3>
+          <p>Página profissional pra apresentar seu negócio, mostrar seus diferenciais e transformar visita em contato — com design pensado pra sua marca, não um modelo pronto.</p>
+          <span class="tag">Vitrine digital</span>
+        </div>
+        <div class="card">
+          <span class="num">SISTEMA</span>
+          <h3>Sistemas sob medida</h3>
+          <p>Ferramentas feitas pra organizar o que hoje é planilha, papel ou WhatsApp perdido — controle de clientes, pedidos, agenda ou o que seu negócio precisar.</p>
+          <span class="tag">Sob demanda</span>
+        </div>
+        <div class="card">
+          <span class="num">SUPORTE</span>
+          <h3>Manutenção &amp; evolução</h3>
+          <p>Depois do site no ar, seguimos junto: ajustes, novas páginas e melhorias conforme o seu negócio cresce — sem precisar recomeçar do zero.</p>
+          <span class="tag">Contínuo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-light" id="processo">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Como trabalhamos</p>
+          <h2>Um processo simples, do primeiro papo à entrega</h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <div class="n">01</div>
+            <h4>Conversa inicial</h4>
+            <p>Entendemos seu negócio, seu público e o que você espera do projeto.</p>
+          </div>
+          <div class="step">
+            <div class="n">02</div>
+            <h4>Proposta &amp; escopo</h4>
+            <p>Fechamos junto o que entra no projeto, prazo e investimento — sem surpresas.</p>
+          </div>
+          <div class="step">
+            <div class="n">03</div>
+            <h4>Design &amp; desenvolvimento</h4>
+            <p>Construímos a página ou sistema, com retornos periódicos pra você acompanhar.</p>
+          </div>
+          <div class="step">
+            <div class="n">04</div>
+            <h4>Entrega &amp; suporte</h4>
+            <p>Colocamos no ar e seguimos disponíveis pra ajustes e evolução.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-dark" id="portfolio">
+      <div class="scales" style="opacity:.5"></div>
+      <div class="wrap" style="position:relative;">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Portfólio</p>
+          <h2>Nossos projetos</h2>
+        </div>
+        <div class="folio-wrap reveal">
+          <h3>primeiros cases por aqui</h3>
+          <p>  </p>
+          <div class="folio-grid">
+            <div class="folio-slot">Em breve</div>
+            <div class="folio-slot">Em breve</div>
+            <div class="folio-slot">Em breve</div>
+          </div>
+          <a href="#contato" class="btn btn-solid" style="margin-top:10px">Iniciar um projeto</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-light" id="contato">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="eyebrow" style="color:var(--venom)">Contato</p>
+            <h2>Vamos colocar seu negócio no ar?</h2>
+            <p>Conta um pouco sobre o seu negócio e o que você precisa. Respondemos rápido — e sem compromisso pra você entender se faz sentido seguir junto.</p>
+            <div class="wa-box">
+              <div class="icon">W</div>
+              <div>
+                <b>Prefere falar direto?</b>
+                <span>Chama a gente no WhatsApp</span>
+              </div>
+            </div>
+          </div>
+          <form class="reveal" id="contactForm">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Como podemos te chamar?" required>
+            </div>
+            <div class="field">
+              <label for="negocio">Seu negócio</label>
+              <input type="text" id="negocio" placeholder="Nome da empresa ou área de atuação">
+            </div>
+            <div class="field">
+              <label for="mensagem">O que você precisa?</label>
+              <textarea id="mensagem" rows="4" placeholder="Conta rapidamente o que você está buscando"></textarea>
+            </div>
+            <div class="submit-row">
+              <button type="submit" class="btn btn-solid" style="border:none">Enviar pelo WhatsApp</button>
+              <span class="hint">Vamos abrir o WhatsApp com sua mensagem pronta pra enviar.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-logo">
+          <div><span class="ls">LS</span></div>
+          <div class="labs">Labs</div>
+        </div>
+        <div class="foot-cols">
+          <div class="foot-col">
+            <h5>Navegação</h5>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+          </div>
+          <div class="foot-col">
+            <h5>Contato</h5>
+            <a href="mailto:contato.lslabs.oficial@gmail.com">
+            [contato.lslabs.oficial@gmail.com]
+          </a>
+          <a href="https://wa.me/5516999999999">
+            [WhatsApp]
+        </a>
+          </div>
+          <div class="foot-col">
+            <h5>Redes</h5>
+            <a href="https://www.instagram.com/lslabs.oficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> LS Labs. Todos os direitos reservados.</span>
+        <span>Desenvolvimento sob medida pra micro e pequenas empresas.</span>
+      </div>
+    </div>
+  </footer>
+
+<script src="./homePage.js" type="module"></script>
+</body>
+</html>
