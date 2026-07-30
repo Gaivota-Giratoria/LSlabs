@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const nome = document.getElementById('nome').value.trim();
       const negocio = document.getElementById('negocio').value.trim();
-      const contato = document.getElementById('contato').value.trim();
+      const contato = document.getElementById('whatsapp').value.trim();
       const mensagem = document.getElementById('mensagem').value.trim();
 
       let texto = `Olá! Meu nome é ${nome}.`;
