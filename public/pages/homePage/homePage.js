@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Formulário do WhatsApp
   // Altere o número padrão caso não vá buscar via API do servidor
-  const WHATSAPP_NUMBER = '5516999999999';
+  const WHATSAPP_NUMBER = '5516991524109';
 
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
@@ -97,10 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const nome = document.getElementById('nome').value.trim();
       const negocio = document.getElementById('negocio').value.trim();
+      const contato = document.getElementById('contato').value.trim();
       const mensagem = document.getElementById('mensagem').value.trim();
 
       let texto = `Olá! Meu nome é ${nome}.`;
       if (negocio) texto += ` Tenho um negócio: ${negocio}.`;
+      if (contato) texto += ` Prefiro ser contatado por: ${contato}.`;
       if (mensagem) texto += ` ${mensagem}`;
       
 
