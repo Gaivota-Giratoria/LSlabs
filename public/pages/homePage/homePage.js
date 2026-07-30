@@ -34,6 +34,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealEls.forEach(el => io.observe(el));
 
+
+  // 3.5 Scroll suave customizado (com duração fixa, pra não ficar "seco")
+  const SCROLL_DURATION = 700; // em ms — aumenta esse número pra ficar mais lento
+
+  function easeInOutQuad(t) {
+    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  }
+
+  function smoothScrollTo(targetY) {
+    const startY = window.pageYOffset;
+    const distance = targetY - startY;
+    const startTime = performance.now();
+
+    function step(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / SCROLL_DURATION, 1);
+      const eased = easeInOutQuad(progress);
+
+      window.scrollTo(0, startY + distance * eased);
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const hash = link.getAttribute('href');
+      const target = hash && hash !== '#' ? document.querySelector(hash) : null;
+      if (!target) return;
+
+      e.preventDefault();
+
+      // scroll-margin-top do seu CSS já garante o respiro do header,
+      // então a gente usa o mesmo cálculo que o navegador usaria
+      const style = getComputedStyle(target);
+      const scrollMarginTop = parseInt(style.scrollMarginTop) || 0;
+      const targetY = target.getBoundingClientRect().top + window.pageYOffset - scrollMarginTop;
+
+      smoothScrollTo(targetY);
+
+      if (window.innerWidth <= 900 && navlinks) {
+        navlinks.style.display = 'none';
+      }
+
+      history.pushState(null, '', hash);
+    });
+  });
+
   // 4. Formulário do WhatsApp
   // Altere o número padrão caso não vá buscar via API do servidor
   const WHATSAPP_NUMBER = '5516999999999';
